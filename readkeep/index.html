@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReadKeep — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the ReadKeep Android app.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #5a5a5a;
+    --rule: #e2e2e2; --accent: #1f6f5c; --card: #f7faf8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121412; --fg: #ececec; --muted: #a6a6a6;
+      --rule: #2c2f2d; --accent: #7fd4bb; --card: #1a1d1b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121412; --fg: #ececec; --muted: #a6a6a6;
+    --rule: #2c2f2d; --accent: #7fd4bb; --card: #1a1d1b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--fg); margin: 0;
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 16px;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 0 96px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.25rem; margin: 40px 0 10px; letter-spacing: -0.01em; }
+  .updated { color: var(--muted); font-size: 0.92rem; margin: 0 0 32px; }
+  .lede {
+    background: var(--card); border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+    border-radius: 8px; padding: 16px 18px; margin: 0 0 8px;
+  }
+  .lede p { margin: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.2em; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9rem; }
+  strong { font-weight: 650; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ReadKeep — Privacy Policy</h1>
+  <p class="updated">Last updated: 24 September 2026</p>
+
+  <div class="lede">
+    <p>ReadKeep has no accounts and never uploads your books, the files you import, the pages you
+    scan or the text you translate. They stay on your device. The only data that leaves your device
+    is anonymous usage and crash information, sent through Google Firebase and described below, and
+    the searches you make for books.</p>
+  </div>
+
+  <h2>Your books and reading data stay on your device</h2>
+  <p>Your books, the files you import, scanned pages, reading sessions, notes, ratings, goals and
+  streak are stored <strong>only on your device</strong>. We have no account system and we do not
+  upload, sell or share this data. You can export your reading data at any time (JSON or CSV) from
+  within the app, and you can delete everything by clearing the app's data or uninstalling it.</p>
+
+  <h2>Files, photos and scans</h2>
+  <p>When you import a PDF, EPUB or photos, the app copies the file into its own storage on your
+  device. Text recognition of scanned pages runs <strong>on your device</strong> (Google ML Kit).
+  Page photos are taken with Google's on-device document scanner, and the app itself has no camera
+  permission. Nothing you import or scan is uploaded.</p>
+
+  <h2>Translation and read-aloud</h2>
+  <p>Translation runs <strong>on your device</strong> (Google ML Kit). The first time you translate
+  into a language, the app downloads that language's translation pack from Google; your text is never
+  sent. Read-aloud uses your phone's own voices, or natural voices that run on your device. A natural
+  voice is downloaded once, from the public sherpa-onnx releases on GitHub; nothing you read is
+  sent.</p>
+
+  <h2>Book lookups and free books</h2>
+  <p>When you search for a book or scan a barcode, the app sends your search text or ISBN to
+  <strong>Google Books</strong> and <strong>Open Library</strong> to fetch titles, covers and details.
+  When you search the free libraries, your search text is sent to <strong>Project Gutenberg</strong>
+  (and its Gutendex index), <strong>Standard Ebooks</strong>, <strong>Wikisource</strong> (Wikimedia)
+  and the <strong>Internet Archive</strong>, and a book you choose to download is fetched from that
+  library. Cover images are loaded from these services. All requests use HTTPS and contain only what
+  you searched for; each service's own privacy policy covers how it handles requests.</p>
+
+  <h2>Analytics and crash reporting</h2>
+  <p>We use <strong>Google Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong> to
+  understand which features are used and to find and fix crashes. These collect anonymous usage
+  events, app performance and crash diagnostics, and device or app identifiers. This data is processed
+  by Google on our behalf, is encrypted in transit, and is <strong>not sold or shared</strong> with
+  third parties for their own purposes. We use it only to improve the app. ReadKeep does not use the
+  advertising ID.</p>
+
+  <h2>Tips</h2>
+  <p>The optional Supporter Tip is a purchase handled by <strong>Google Play</strong>. We never see
+  your payment details; Google Play tells the app only that the tip went through. A tip unlocks
+  nothing.</p>
+
+  <h2>What we do not do</h2>
+  <ul>
+    <li>No ads and no advertising identifiers.</li>
+    <li>No accounts or logins.</li>
+    <li>No selling or sharing of your personal data.</li>
+    <li>No location, contacts, SMS, camera or microphone permission.</li>
+  </ul>
+
+  <h2>Permissions, and why each one exists</h2>
+  <table>
+    <tr><th>Permission</th><th>Why ReadKeep asks</th></tr>
+    <tr><td>Internet and network state</td><td>Book lookups and downloads, cover images, translation
+      packs and voices, and analytics and crash reporting.</td></tr>
+    <tr><td>Notifications</td><td>Progress while a large import or download runs, and the optional
+      daily reading reminder.</td></tr>
+    <tr><td>Foreground service (data sync)</td><td>Keeps a large import or a download going when you
+      leave the app, with a visible notification.</td></tr>
+    <tr><td>Google Play billing</td><td>Only for the optional Supporter Tip.</td></tr>
+  </table>
+
+  <h2>Children</h2>
+  <p>ReadKeep is not directed to children under 13 and does not knowingly collect personal
+  information from them.</p>
+
+  <h2>Deleting your data</h2>
+  <p>Reading data: clear the app's data or uninstall the app. To ask us to delete analytics or crash
+  data associated with your device, email us at the address below.</p>
+
+  <h2>Changes</h2>
+  <p>We may update this policy. Material changes will appear here with a new "Last updated" date.</p>
+
+  <footer>
+    Questions or requests: <a href="mailto:rbaiforge@gmail.com">rbaiforge@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>

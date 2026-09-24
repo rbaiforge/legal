@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReactCam — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the ReactCam Android app.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #5a5a5a;
+    --rule: #e2e2e2; --accent: #b36b00; --card: #fafafa;
+  }
+  :root:not([data-theme="light"]) { }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121212; --fg: #ececec; --muted: #a6a6a6;
+      --rule: #2c2c2c; --accent: #ffb224; --card: #1b1b1b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121212; --fg: #ececec; --muted: #a6a6a6;
+    --rule: #2c2c2c; --accent: #ffb224; --card: #1b1b1b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--fg); margin: 0;
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 16px;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 0 96px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.25rem; margin: 40px 0 10px; letter-spacing: -0.01em; }
+  .updated { color: var(--muted); font-size: 0.92rem; margin: 0 0 32px; }
+  .lede {
+    background: var(--card); border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+    border-radius: 8px; padding: 16px 18px; margin: 0 0 8px;
+  }
+  .lede p { margin: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+  a { color: var(--accent); }
+  code { background: var(--card); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9rem; }
+  strong { font-weight: 650; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ReactCam — Privacy Policy</h1>
+  <p class="updated">Last updated: 23 September 2026</p>
+
+  <div class="lede">
+    <p>ReactCam has no accounts and never uploads your videos, audio or captions. Your recordings
+    stay on your device until you choose to share them. The only data that leaves your device is
+    limited crash, diagnostics and usage information, sent through Google Firebase and described
+    below.</p>
+  </div>
+
+  <h2>What ReactCam does with your data</h2>
+  <p><strong>Your videos, photos and audio stay on your device.</strong> Recording, captions and
+  video export all run on your phone or tablet. None of it is sent to us or to anyone else.</p>
+  <p><strong>Captions are generated on your device.</strong> Speech recognition runs locally
+  using an offline model. Your voice is never uploaded to a server for transcription.</p>
+  <p><strong>We have no account system.</strong> There is nothing to sign up for, so we hold no
+  name, email address, phone number or profile.</p>
+  <p><strong>Sharing is something you initiate.</strong> When you tap a share button, your video
+  is handed to the app you chose — Instagram, YouTube, or whatever you pick from the system
+  share sheet. From that point the receiving app's own privacy policy applies, not ours. We are
+  not party to that transfer and do not see it.</p>
+
+  <h2>Permissions, and why each one exists</h2>
+  <table>
+    <tr><th>Permission</th><th>Why ReactCam asks</th></tr>
+    <tr><td>Camera</td><td>To record your reaction. Used only while you are recording.</td></tr>
+    <tr><td>Microphone</td><td>To record your voice alongside it.</td></tr>
+    <tr><td>Screen recording</td><td>Only when you start a screen capture yourself, and only for
+      that session. Android shows its own confirmation every time, which we cannot bypass.</td></tr>
+    <tr><td>Display over other apps</td><td>To draw your camera bubble and frame on top of the
+      video you are reacting to in another app. Nothing is read from the app underneath.</td></tr>
+    <tr><td>Foreground service (camera, microphone, screen recording)</td><td>Android requires a
+      visible, ongoing notification for recording that continues while you use another app. These
+      permissions allow that notification-backed recording session and nothing else.</td></tr>
+    <tr><td>Notifications</td><td>To show a recording notification with a Stop button while
+      screen capture runs in the background. Android requires this for the feature to work.</td></tr>
+    <tr><td>Internet</td><td>Only for the crash, diagnostics and configuration services described
+      below. Your videos are never uploaded.</td></tr>
+    <tr><td>Network state</td><td>Used by the same Firebase libraries to avoid sending while you
+      are offline.</td></tr>
+  </table>
+  <p><strong>ReactCam asks for no gallery or storage permission at all.</strong> When you import
+  a video, Android's own file picker hands ReactCam that one file and nothing else. The app has
+  never been able to browse, scan or catalogue your photos and videos, and it does not ask to.</p>
+
+  <h2>Diagnostics</h2>
+  <p>ReactCam includes Google's Firebase Crashlytics, Analytics and Remote Config:</p>
+  <ul>
+    <li><strong>Crashlytics</strong> sends crash reports and diagnostics — that the app crashed,
+    where in its code, and the device model and Android version.</li>
+    <li><strong>Analytics</strong> sends basic usage events — for example that the app was opened
+    or an export finished.</li>
+    <li><strong>Remote Config</strong> downloads settings for the app, so a problem can be switched
+    off without a new release.</li>
+  </ul>
+  <p>These services use identifiers that Firebase assigns to the app installation on your
+  device. They are not linked to your name, email or any account — ReactCam has none. This
+  tells us the app is broken so we can fix it; it is not used for advertising.</p>
+  <p><strong>This never includes your videos, your audio, your captions, or the text you
+  type.</strong> These reports are handled under
+  <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and
+  <a href="https://firebase.google.com/support/privacy">Firebase's data-handling terms</a>.</p>
+
+  <h2>Children</h2>
+  <p>ReactCam is not directed at children under 13 and we do not knowingly collect anything from
+  them. Beyond the diagnostics above, we do not collect personal information from anyone.</p>
+
+  <h2>Payment</h2>
+  <p>There is none. ReactCam is free, has no advertising, no in-app purchases and no paid tier.
+  We have no billing relationship with you and therefore hold no payment information.</p>
+
+  <h2>Deleting your data</h2>
+  <p>Your reactions live in ReactCam's own storage on your device. Delete them from inside the
+  app, or uninstall it — uninstalling removes everything ReactCam created. There is no
+  server-side copy of your videos, audio or captions, because they are never uploaded.</p>
+  <p>Diagnostics reports are kept by Google Firebase for our project. They are not tied to a
+  name or account, so we cannot pick out one person's reports; if you want to ask about them,
+  write to the address below.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the date at the top changes with it, and a material change will be
+  noted in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:rbaiforge@gmail.com">rbaiforge@gmail.com</a></p>
+
+  <footer>ReactCam · <code>com.rbaiforge.reactcam</code></footer>
+</main>
+</body>
+</html>
