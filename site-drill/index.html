@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site-Drill — Privacy Policy</title>
+<meta name="description" content="Privacy policy for Site-Drill, the free map drill of historical sites (web and Android).">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #5a5a5a;
+    --rule: #e2e2e2; --accent: #2f45a5; --card: #f5f6fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141412; --fg: #ececec; --muted: #a6a6a6;
+      --rule: #2c2f2d; --accent: #a3b3ff; --card: #1c1d22;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141412; --fg: #ececec; --muted: #a6a6a6;
+    --rule: #2c2f2d; --accent: #a3b3ff; --card: #1c1d22;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--fg); margin: 0;
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 16px;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 0 96px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.25rem; margin: 40px 0 10px; letter-spacing: -0.01em; }
+  .updated { color: var(--muted); font-size: 0.92rem; margin: 0 0 32px; }
+  .lede {
+    background: var(--card); border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+    border-radius: 8px; padding: 16px 18px; margin: 0 0 8px;
+  }
+  .lede p { margin: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  .table-wrap { overflow-x: auto; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.2em; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9rem; }
+  strong { font-weight: 650; }
+</style>
+</head>
+<body>
+<main>
+<h1>Site-Drill — Privacy Policy</h1>
+<p class="updated">Last updated: 26 September 2026 · Applies to the website <a href="https://rbaiforge.github.io/site-drill/">rbaiforge.github.io/site-drill</a> and the Android app</p>
+
+<div class="lede">
+  <p>Site-Drill has no accounts, no ads and asks for no permissions. Your answers, notes and progress stay on your
+  device. The only data that leaves it is anonymous usage counts and, on Android, crash reports, described below.
+  Nothing you type is ever sent anywhere.</p>
+</div>
+
+<h2>Your progress stays on your device</h2>
+<p>Your drill history, scores, review schedule, typed answers, notes and settings are stored <strong>only on your
+device</strong> (in your browser's storage on the web, in the app's private storage on Android). We have no server
+and no account system, and we do not upload, sell or share this data. You can export your progress as a file and
+import it on another device from within Site-Drill, and you can delete everything by clearing the site's data in
+your browser or the app's data on Android, or by uninstalling the app.</p>
+
+<h2>Anonymous usage counts</h2>
+<p>To learn which parts of Site-Drill help and which don't, we count a small, fixed set of actions, for example
+"a drill started", "an answer was scored in the 50–100 km band" or "the map-error link was opened". Every count
+carries only a fixed choice from a list or a number: <strong>never text you typed, never a site you answered, never
+your name, email or location</strong>. We also record which product (Site-Drill) and platform (web or Android) the
+count came from.</p>
+<div class="table-wrap">
+<table>
+  <tr><th>Where</th><th>Service</th><th>When</th></tr>
+  <tr><td>Android app</td><td>Google Firebase Analytics</td><td>From the first launch, unless you are in the EU/EEA, the UK or Switzerland (or your device’s time zone doesn’t tell us): there it stays off until you tap “Allow”.</td></tr>
+  <tr><td>Website</td><td>Google Analytics</td><td>Loaded only after your first scored answer, and in the EU/EEA, the UK and Switzerland (or when your time zone doesn’t tell us) only if you choose “Accept” in the consent bar.</td></tr>
+</table>
+</div>
+<p>On Android, Site-Drill never collects the advertising ID, never enables ad personalisation and has no advertising
+features. Firebase assigns the app installation a random identifier, which is not linked to you. You can change your
+choice at any time in About &amp; Settings. Google processes this data under its own
+<a href="https://policies.google.com/privacy">privacy policy</a>; it is kept according to the data-retention setting
+of our Google Analytics property.</p>
+
+<h2>Crash reports (Android)</h2>
+<p>If the Android app crashes or hits an error it can't recover from, Google Firebase Crashlytics sends a crash report:
+the technical error, the app version, the device model and Android version, and the installation's random
+identifier. When Site-Drill records a handled error itself, it sends only a short code (for example “storage_write in
+drill”), never your content. Crash reports are kept for 90 days.</p>
+
+<h2>Feature settings (Android)</h2>
+<p>The Android app asks Google Firebase Remote Config for a few settings (such as the number of sites per drill), so
+we can adjust them without a new release. If the request fails, Site-Drill uses its built-in defaults.</p>
+
+<h2>Links that leave Site-Drill</h2>
+<p>“Report a bug / Suggest”, “Report a site/map error”, the sources shown with each answer and (on the website) the
+optional GitHub Sponsors link open other websites in your browser. Those sites have their own privacy policies.
+Opening a report page tells that page only which product and, for a map error, which site the report is about.</p>
+
+<h2>Permissions</h2>
+<p>Site-Drill asks for <strong>no permissions</strong>. You locate a site by tapping the map; it never uses your
+location, camera, contacts or files. Exports go through your browser's download or your phone's share sheet.</p>
+
+<h2>Children</h2>
+<p>Site-Drill is made for adults preparing for history exams. It is not directed at children under 13, and we do
+not knowingly collect data from them.</p>
+
+<h2>Changes and contact</h2>
+<p>If this policy changes, we update this page and the date above. Questions or requests:
+<a href="mailto:rbaiforge@gmail.com">rbaiforge@gmail.com</a>.</p>
+
+<footer>Site-Drill is made by rbaiforge. Free, no ads, no login.</footer>
+</main>
+</body>
+</html>
